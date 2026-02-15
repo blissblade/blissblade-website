@@ -1,21 +1,24 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0B2C6B;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(180deg, #0B2C6B, #081f4d);
     color: white;
 }
 
 nav {
-    background: #081f4d;
-    padding: 15px;
+    background: rgba(0,0,0,0.3);
+    padding: 18px;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
     color: #D4AF37;
-    margin: 0 15px;
+    margin: 0 18px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 nav a:hover {
@@ -24,40 +27,53 @@ nav a:hover {
 
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 120px 20px;
 }
 
-h1 {
+.hero h1 {
+    font-size: 60px;
     color: #D4AF37;
-    font-size: 48px;
+    letter-spacing: 3px;
 }
 
-h2 {
-    color: #D4AF37;
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .button {
     display: inline-block;
     background: #D4AF37;
     color: #0B2C6B;
-    padding: 12px 25px;
-    margin-top: 20px;
+    padding: 14px 35px;
+    margin-top: 30px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 30px;
+    transition: 0.3s;
 }
 
 .button:hover {
     background: #b9962f;
+    transform: scale(1.05);
 }
 
 .section {
-    padding: 40px;
+    padding: 70px 10%;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 4px solid #D4AF37;
+    border-radius: 8px;
 }
 
 .footer {
     background: #081f4d;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 25px;
+    margin-top: 60px;
+    font-size: 14px;
 }

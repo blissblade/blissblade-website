@@ -10,18 +10,19 @@ function sendToWhatsApp() {
     var name = document.getElementById("name").value;
     var service = document.getElementById("service").value;
     var date = document.getElementById("date").value;
+    var time = document.getElementById("time").value;
 
     var message = "Hello Bliss // Blade,%0A%0A"
         + "Name: " + name + "%0A"
         + "Service: " + service + "%0A"
-        + "Preferred Date: " + date;
+        + "Preferred Date: " + date + "%0A"
+        + "Preferred Time: " + time;
 
     var whatsappURL = "https://wa.me/919990939344?text=" + message;
 
     window.open(whatsappURL, "_blank");
 }
 </script>
-
   
 <body>
 
@@ -133,6 +134,7 @@ loading="lazy">
 
 </body>
 </html>
+
 
 
 

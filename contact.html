@@ -4,6 +4,25 @@
 <title>Contact - Bliss // Blade</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+function sendToWhatsApp() {
+    var name = document.getElementById("name").value;
+    var service = document.getElementById("service").value;
+    var date = document.getElementById("date").value;
+
+    var message = "Hello Bliss // Blade,%0A%0A"
+        + "Name: " + name + "%0A"
+        + "Service: " + service + "%0A"
+        + "Preferred Date: " + date;
+
+    var whatsappURL = "https://wa.me/919990939344?text=" + message;
+
+    window.open(whatsappURL, "_blank");
+}
+</script>
+
+  
 <body>
 
 <nav>
@@ -37,12 +56,60 @@ Mancherial – 504208
 <span>blissblade1205@gmail.com</span>
 </div>
 
+<div style="margin-top:30px;">
+<h3 style="color:#D4AF37;">Follow Us</h3>
+
+<a href="https://www.instagram.com/bliss_blade/" target="_blank" style="margin-right:20px; text-decoration:none; color:white;">
+📸 Instagram
+</a>
+
+<a href="https://www.youtube.com/" target="_blank" style="text-decoration:none; color:white;">
+▶ YouTube
+</a>
+</div>
+
+
 <a class="button" href="https://wa.me/919990939344">
 Book via WhatsApp
 </a>
 
 </div>
 </div>
+
+<div class="section">
+<h2>Opening Hours</h2>
+
+<div class="service-item">
+<p>Monday – Sunday</p>
+<span>10:00 AM – 9:00 PM</span>
+</div>
+
+<div class="service-item">
+<p>Public Holidays</p>
+<span>Open</span>
+</div>
+
+</div>
+
+<div class="section">
+<h2>Quick Booking</h2>
+
+<form onsubmit="sendToWhatsApp(); return false;" style="max-width:500px; margin:auto;">
+
+<input type="text" id="name" placeholder="Your Name" required 
+style="width:100%; padding:10px; margin-bottom:10px; border-radius:8px; border:none;">
+
+<input type="text" id="service" placeholder="Service Required" required 
+style="width:100%; padding:10px; margin-bottom:10px; border-radius:8px; border:none;">
+
+<input type="date" id="date" required 
+style="width:100%; padding:10px; margin-bottom:10px; border-radius:8px; border:none;">
+
+<button type="submit" class="button" style="width:100%;">Send via WhatsApp</button>
+
+</form>
+</div>
+
 
 
 <div class="section">
@@ -63,4 +130,5 @@ loading="lazy">
 
 </body>
 </html>
+
 

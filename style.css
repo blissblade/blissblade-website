@@ -77,3 +77,10 @@ nav a:hover {
     margin-top: 60px;
     font-size: 14px;
 }
+
+.card {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+

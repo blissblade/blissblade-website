@@ -15,29 +15,39 @@ function sendToWhatsApp() {
     var date = document.getElementById("date").value;
     var time = document.getElementById("time").value;
 
-    // Convert 24-hour time to 12-hour format
+    // Convert 24-hour to 12-hour format
     var timeParts = time.split(":");
     var hours = parseInt(timeParts[0]);
     var minutes = timeParts[1];
 
     var ampm = hours >= 12 ? "PM" : "AM";
     hours = hours % 12;
-    hours = hours ? hours : 12; // Convert 0 to 12
+    hours = hours ? hours : 12;
 
     var formattedTime = hours + ":" + minutes + " " + ampm;
 
-    // Create WhatsApp message
-    var message = "Hello Bliss // Blade,%0A%0A"
-        + "Name: " + name + "%0A"
-        + "Service: " + service + "%0A"
-        + "Preferred Date: " + date + "%0A"
-        + "Preferred Time: " + formattedTime;
+    // Confirmation popup
+    var confirmBooking = confirm(
+        "Please confirm your booking details:\n\n"
+        + "Name: " + name + "\n"
+        + "Service: " + service + "\n"
+        + "Date: " + date + "\n"
+        + "Time: " + formattedTime
+    );
 
-    // WhatsApp URL
-    var whatsappURL = "https://wa.me/919990939344?text=" + message;
+    // If user clicks OK
+    if (confirmBooking) {
 
-    // Open WhatsApp
-    window.open(whatsappURL, "_blank");
+        var message = "Hello Bliss // Blade,%0A%0A"
+            + "Name: " + name + "%0A"
+            + "Service: " + service + "%0A"
+            + "Preferred Date: " + date + "%0A"
+            + "Preferred Time: " + formattedTime;
+
+        var whatsappURL = "https://wa.me/919990939344?text=" + message;
+
+        window.open(whatsappURL, "_blank");
+    }
 }
 </script>
 <!-- ===================== END WHATSAPP SCRIPT ===================== -->
@@ -156,6 +166,7 @@ loading="lazy">
 
 </body>
 </html>
+
 
 
 

@@ -9,11 +9,15 @@
 <script>
 function sendToWhatsApp() {
 
-    // Get form values
     var name = document.getElementById("name").value;
     var service = document.getElementById("service").value;
     var date = document.getElementById("date").value;
     var time = document.getElementById("time").value;
+
+    if (!service) {
+        alert("Please select a service.");
+        return;
+    }
 
     // Convert 24-hour to 12-hour format
     var timeParts = time.split(":");
@@ -26,28 +30,18 @@ function sendToWhatsApp() {
 
     var formattedTime = hours + ":" + minutes + " " + ampm;
 
-    // Confirmation popup
-    var confirmBooking = confirm(
-        "Please confirm your booking details:\n\n"
-        + "Name: " + name + "\n"
-        + "Service: " + service + "\n"
-        + "Date: " + date + "\n"
-        + "Time: " + formattedTime
-    );
+    // Show Thank You popup
+    alert("Thank you " + name + "!\n\nYour booking request has been prepared.\nRedirecting to WhatsApp...");
 
-    // If user clicks OK
-    if (confirmBooking) {
+    var message = "Hello Bliss // Blade,%0A%0A"
+        + "Name: " + name + "%0A"
+        + "Service: " + service + "%0A"
+        + "Preferred Date: " + date + "%0A"
+        + "Preferred Time: " + formattedTime;
 
-        var message = "Hello Bliss // Blade,%0A%0A"
-            + "Name: " + name + "%0A"
-            + "Service: " + service + "%0A"
-            + "Preferred Date: " + date + "%0A"
-            + "Preferred Time: " + formattedTime;
+    var whatsappURL = "https://wa.me/919990939344?text=" + message;
 
-        var whatsappURL = "https://wa.me/919990939344?text=" + message;
-
-        window.open(whatsappURL, "_blank");
-    }
+    window.open(whatsappURL, "_blank");
 }
 </script>
 <!-- ===================== END WHATSAPP SCRIPT ===================== -->
@@ -132,8 +126,23 @@ Book via WhatsApp
 <input type="text" id="name" placeholder="Your Name" required 
 style="width:100%; padding:10px; margin-bottom:10px; border-radius:8px; border:none;">
 
-<input type="text" id="service" placeholder="Service Required" required 
+<!-- ===================== SERVICE DROPDOWN ===================== -->
+<select id="service" required
 style="width:100%; padding:10px; margin-bottom:10px; border-radius:8px; border:none;">
+
+    <option value="" disabled selected>Select Service</option>
+
+    <option value="Hair Cut">Hair Cut</option>
+    <option value="Beard Trim">Beard Trim</option>
+    <option value="Hair Spa">Hair Spa</option>
+    <option value="Facial">Facial</option>
+    <option value="Hair Coloring">Hair Coloring</option>
+    <option value="Waxing">Waxing</option>
+    <option value="Threading">Threading</option>
+
+</select>
+<!-- ===================== END SERVICE DROPDOWN ===================== -->
+
 
 <input type="date" id="date" required 
 style="width:100%; padding:10px; margin-bottom:10px; border-radius:8px; border:none;">
@@ -178,6 +187,7 @@ loading="lazy">
 
 </body>
 </html>
+
 
 
 

@@ -6,12 +6,15 @@ body {
 }
 
 nav {
-    background: rgba(0,0,0,0.3);
-    padding: 18px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    padding: 20px;
     text-align: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
+
 
 nav a {
     color: #D4AF37;
@@ -25,16 +28,24 @@ nav a:hover {
     color: white;
 }
 
+/* ===================== HERO SECTION ===================== */
 .hero {
     text-align: center;
-    padding: 120px 20px;
+    padding: 160px 20px;
+    background: linear-gradient(rgba(11,44,107,0.85), rgba(7,26,58,0.85)),
+    url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero h1 {
-    font-size: 60px;
+    font-size: 64px;
     color: #D4AF37;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px rgba(212,175,55,0.6);
 }
+
 
 .hero p {
     font-size: 20px;
@@ -150,5 +161,6 @@ nav a:hover {
     transform: scale(1.1);
 }
 /* ===================== END FLOATING BUTTON STYLE ===================== */
+
 
 

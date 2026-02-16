@@ -130,4 +130,25 @@ nav a:hover {
     padding-left: 10px;
 }
 
+/* ===================== FLOATING WHATSAPP BUTTON STYLE ===================== */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    font-size: 24px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+}
+/* ===================== END FLOATING BUTTON STYLE ===================== */
+
 

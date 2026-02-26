@@ -288,17 +288,17 @@ nav a:hover {
 
 }
 
-/* ===================== MOBILE BUTTON FIX ===================== */
+/* ===================== HERO BUTTON FIX ONLY ===================== */
 @media (max-width: 768px) {
 
-    .button {
+    .hero .button {
         width: 85%;
         margin: 25px auto 0 auto;
-        display: block;
         text-align: center;
     }
 
 }
+
 
 
 

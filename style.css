@@ -10,7 +10,7 @@ body {
 
 /* ===================== MOBILE NAVIGATION ===================== */
 nav {
-    background: linear-gradient(90deg, #071a3a, #0B2C6B);
+    background: rgba(0,0,0,0.7);
     backdrop-filter: blur(6px);
     padding: 15px;
     text-align: center;
@@ -233,6 +233,7 @@ nav a:hover {
     }
 
 }
+
 
 
 

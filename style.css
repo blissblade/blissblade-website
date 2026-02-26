@@ -206,23 +206,6 @@ nav a:hover {
 
 }
 
-/* ===================== MOBILE NAV FIX ===================== */
-@media (max-width: 768px) {
-
-    nav {
-        padding: 12px 10px;
-    }
-
-    nav a {
-        display: inline-block;
-        width: 45%;  
-        margin: 6px 0;
-        font-size: 14px;
-    }
-
-}
-
-
 
 /* ===================== MOBILE WHATSAPP FIX ===================== */
 @media (max-width: 768px) {
@@ -235,24 +218,6 @@ nav a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-}
-
-/* ===================== CLEAN MOBILE NAV ALIGNMENT ===================== */
-@media (max-width: 768px) {
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px 20px;   /* row gap / column gap */
-        padding: 15px 10px;
-    }
-
-    nav a {
-        margin: 0;
-        font-size: 14px;
     }
 
 }
@@ -284,23 +249,8 @@ nav a:hover {
 
 }
 
-/* ===================== EXACT MOBILE NAV LAYOUT ===================== */
-@media (max-width: 768px) {
 
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px 18px;
-    }
 
-    nav a {
-        flex: 0 0 auto;  /* Prevent equal 3-3 split */
-        margin: 0;
-        font-size: 14px;
-    }
-
-}
 
 
 

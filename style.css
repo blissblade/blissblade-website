@@ -250,6 +250,24 @@ nav a:hover {
 
 }
 
+/* ===================== CLEAN MOBILE NAV ALIGNMENT ===================== */
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;   /* row gap / column gap */
+        padding: 15px 10px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+}
+
 
 
 

@@ -284,6 +284,24 @@ nav a:hover {
 
 }
 
+/* ===================== EXACT MOBILE NAV LAYOUT ===================== */
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    nav a {
+        flex: 0 0 auto;  /* Prevent equal 3-3 split */
+        margin: 0;
+        font-size: 14px;
+    }
+
+}
+
 
 
 

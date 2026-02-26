@@ -234,12 +234,13 @@ nav a:hover {
     }
 
     nav a {
-        font-size: 13px;      /* slightly smaller */
+        font-size: 12px;      /* slightly smaller */
         white-space: nowrap;  /* prevent text break */
         margin: 0;
     }
 
 }
+
 
 
 

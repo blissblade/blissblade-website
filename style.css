@@ -9,7 +9,6 @@ body {
 }
 
 /* ===================== MOBILE NAVIGATION ===================== */
-/* ===================== PREMIUM NAVBAR ===================== */
 
 nav {
     background: linear-gradient(90deg, #071a3a, #0B2C6B);
@@ -207,7 +206,21 @@ nav a:hover {
 
 }
 
+/* ===================== MOBILE NAV FIX ===================== */
+@media (max-width: 768px) {
 
+    nav {
+        padding: 12px 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        width: 45%;  
+        margin: 6px 0;
+        font-size: 14px;
+    }
+
+}
 
 /* ===================== MOBILE HERO FIX ===================== */
 @media (max-width: 768px) {
@@ -236,6 +249,7 @@ nav a:hover {
     }
 
 }
+
 
 
 

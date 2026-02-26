@@ -24,6 +24,8 @@ nav a {
     display: inline-block;
     margin: 8px 10px;
     font-size: 14px;
+    color: #D4AF37;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -201,6 +203,7 @@ nav a:hover {
     }
 
 }
+
 
 
 

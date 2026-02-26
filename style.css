@@ -213,7 +213,6 @@ nav a:hover {
 
     nav a {
         display: inline-block;
-        width: 45%;
         margin: 6px 0;
         font-size: 14px;
     }
@@ -247,6 +246,7 @@ nav a:hover {
     }
 
 }
+
 
 
 

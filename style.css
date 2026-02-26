@@ -223,7 +223,23 @@ nav a:hover {
 }
 
 
+/* Force 4 buttons first row, 2 second row (Mobile only) */
+@media (max-width: 768px) {
 
+    nav {
+        display: grid;
+        grid-template-columns: repeat(4, auto); /* 4 per row */
+        justify-content: center;                /* center rows */
+        gap: 10px 18px;                         /* spacing */
+    }
+
+    nav a {
+        font-size: 13px;      /* slightly smaller */
+        white-space: nowrap;  /* prevent text break */
+        margin: 0;
+    }
+
+}
 
 
 

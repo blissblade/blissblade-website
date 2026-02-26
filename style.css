@@ -1,12 +1,16 @@
+/* ===================== BASE MOBILE STYLES ===================== */
+
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(180deg, #0B2C6B, #081f4d);
+    background: linear-gradient(180deg, #0B2C6B 0%, #071a3a 100%);
     color: white;
+    font-size: 16px;   /* Good mobile readability */
 }
 
+/* ===================== MOBILE NAVIGATION ===================== */
 nav {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     backdrop-filter: blur(6px);
     padding: 15px;
     text-align: center;
@@ -29,7 +33,7 @@ nav a:hover {
 /* ===================== HERO SECTION ===================== */
 .hero {
     text-align: center;
-    padding: 160px 20px;
+    padding: 120px 20px;
     background: linear-gradient(rgba(11,44,107,0.85), rgba(7,26,58,0.85)),
     url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e');
     background-size: cover;
@@ -37,29 +41,32 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 64px;
+    font-size: 32px;
     color: #D4AF37;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     margin-bottom: 10px;
     text-shadow: 0 0 15px rgba(212,175,55,0.6);
 }
 
 
 .hero p {
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 10px;
 }
 
+/* ===================== BUTTON ===================== */
 .button {
-    display: inline-block;
+    display: block;              /* Mobile friendly */
+    width: 100%;                 /* Full width on mobile */
     background: #D4AF37;
     color: #0B2C6B;
-    padding: 14px 35px;
-    margin-top: 30px;
+    padding: 14px;
+    margin-top: 20px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 30px;
     transition: 0.3s;
+    text-align: center;
 }
 
 .button:hover {
@@ -67,36 +74,37 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+/* ===================== SECTION ===================== */
 .section {
-    padding: 70px 10%;
+    padding: 40px 20px;   /* Better for mobile */
 }
 
+/* ===================== CARD ===================== */
 .card {
     background: rgba(255,255,255,0.08);
-    padding: 25px;
-    margin: 20px 0;
+    padding: 20px;
+    margin: 15px 0;
     border-left: 4px solid #D4AF37;
     border-radius: 8px;
-}
-
-.footer {
-    background: #081f4d;
-    text-align: center;
-    padding: 25px;
-    margin-top: 60px;
-    font-size: 14px;
-}
-
-.card {
     text-decoration: none;
     color: white;
     display: block;
 }
 
+/* ===================== FOOTER ===================== */
+.footer {
+    background: #081f4d;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* ===================== SERVICE LIST ===================== */
 .service-item {
     display: flex;
     justify-content: space-between;
-    padding: 12px 0;
+    padding: 10px 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -105,49 +113,27 @@ nav a:hover {
     color: #D4AF37;
 }
 
+/* ===================== CATEGORY ===================== */
 .category {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .category h3 {
     color: #D4AF37;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border-left: 4px solid #D4AF37;
     padding-left: 10px;
 }
 
-.service-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.service-item span {
-    font-weight: bold;
-    color: #D4AF37;
-}
-
-.category {
-    margin-top: 50px;
-}
-
-.category h3 {
-    color: #D4AF37;
-    margin-bottom: 20px;
-    border-left: 4px solid #D4AF37;
-    padding-left: 10px;
-}
-
-/* ===================== FLOATING WHATSAPP BUTTON STYLE ===================== */
+/* ===================== FLOATING WHATSAPP ===================== */
 .floating-whatsapp {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 20px;
+    right: 20px;
     background-color: #25D366;
     color: white;
-    font-size: 24px;
-    padding: 15px 18px;
+    font-size: 22px;
+    padding: 14px 16px;
     border-radius: 50%;
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
@@ -158,9 +144,8 @@ nav a:hover {
 .floating-whatsapp:hover {
     transform: scale(1.1);
 }
-/* ===================== END FLOATING BUTTON STYLE ===================== */
 
-/* ===================== BOOKING MODAL STYLE ===================== */
+/* ===================== BOOKING MODAL ===================== */
 .modal {
     display: none;
     position: fixed;
@@ -174,8 +159,8 @@ nav a:hover {
 
 .modal-content {
     background: #0B2C6B;
-    margin: 10% auto;
-    padding: 30px;
+    margin: 25% auto;      /* Better center on mobile */
+    padding: 25px;
     width: 90%;
     max-width: 400px;
     border-radius: 12px;
@@ -193,9 +178,28 @@ nav a:hover {
 
 .close-btn {
     float: right;
-    font-size: 24px;
+    font-size: 22px;
     cursor: pointer;
     color: #D4AF37;
+}
+
+/* ===================== DESKTOP ENHANCEMENT ===================== */
+@media (min-width: 768px) {
+
+    .section {
+        padding: 80px 10%;
+    }
+
+    .button {
+        width: auto;
+        display: inline-block;
+        padding: 14px 35px;
+    }
+
+    .modal-content {
+        margin: 10% auto;
+    }
+
 }
 
 

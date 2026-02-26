@@ -61,7 +61,7 @@ nav a:hover {
 /* ===================== BUTTON ===================== */
 .button {
     display: block;              /* Mobile friendly */
-    width: 100%;                 /* Full width on mobile */
+                    
     background: #D4AF37;
     color: #0B2C6B;
     padding: 14px;
@@ -267,6 +267,39 @@ nav a:hover {
     }
 
 }
+
+/* ===================== MOBILE HERO ALIGN FIX ===================== */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 90px 20px 70px 20px; /* better vertical balance */
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        margin: 8px 0;
+        line-height: 1.4;
+    }
+
+}
+
+/* ===================== MOBILE BUTTON FIX ===================== */
+@media (max-width: 768px) {
+
+    .button {
+        width: 85%;
+        margin: 25px auto 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+}
+
 
 
 

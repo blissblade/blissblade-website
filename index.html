@@ -4,7 +4,46 @@
 <title>Bliss // Blade</title>
 <link rel="stylesheet" href="style.css">
 </head>
+    
+<!-- ===================== BOOKING MODAL ===================== -->
+<div id="bookingModal" class="modal">
 
+    <div class="modal-content">
+
+        <span class="close-btn" onclick="closeBookingModal()">&times;</span>
+
+        <h2>Quick Booking</h2>
+
+        <form onsubmit="sendToWhatsApp(); return false;">
+
+            <!-- Name Field -->
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <!-- Service Dropdown -->
+            <select id="service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option>Hair Cut</option>
+                <option>Beard Trim</option>
+                <option>Hair Spa</option>
+                <option>Facial</option>
+                <option>Hair Coloring</option>
+                <option>Waxing</option>
+                <option>Threading</option>
+            </select>
+
+            <!-- Date Field -->
+            <input type="date" id="date" required>
+
+            <!-- Time Field -->
+            <input type="time" id="time" required>
+
+            <button type="submit" class="button">Send Booking</button>
+
+        </form>
+
+    </div>
+</div>
+<!-- ===================== END BOOKING MODAL ===================== -->
 
 <body>
 
@@ -21,7 +60,7 @@
 <h1>BLISS // BLADE</h1>
 <p>Unisex Salon • Aesthetics Studio</p>
 <p>Where Style Meets Perfection</p>
-<a class="button" href="https://wa.me/919990939344">Book Appointment</a>
+<a class="button" href="#" onclick="openBookingModal()">Book Appointment</a>
 </div>
 
 <div class="section">
@@ -69,6 +108,7 @@
 
 </body>
 </html>
+
 
 
 

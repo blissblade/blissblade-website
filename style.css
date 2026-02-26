@@ -204,6 +204,53 @@ nav a:hover {
 
 }
 
+/* ===================== MOBILE NAV FIX ===================== */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 12px 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        width: 45%;
+        margin: 6px 0;
+        font-size: 14px;
+    }
+
+}
+
+/* ===================== MOBILE HERO FIX ===================== */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+}
+
+/* ===================== MOBILE WHATSAPP FIX ===================== */
+@media (max-width: 768px) {
+
+    .floating-whatsapp {
+        bottom: 15px;
+        right: 15px;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+
+
 
 
 

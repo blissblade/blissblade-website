@@ -20,7 +20,7 @@
 <p>Package 2 – ₹2240 (30% OFF)</p>
 <p>Package 3 – ₹2695 (30% OFF)</p>
 
-<a class="button" href="https://wa.me/919990939344">Book Package</a>
+<a class="button" href="#" onclick="openBookingModal()">Book Appointment</a>
 </div>
 
 <!-- ===================== FLOATING WHATSAPP BUTTON ===================== -->
@@ -33,8 +33,93 @@
 
 </a>
 <!-- ===================== END FLOATING WHATSAPP BUTTON ===================== -->
-  
+
+<!-- ===================== BOOKING MODAL ===================== -->
+<div id="bookingModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close-btn" onclick="closeBookingModal()">&times;</span>
+
+        <h2>Quick Booking</h2>
+
+        <form onsubmit="sendToWhatsApp(); return false;">
+
+            <!-- Name Field -->
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <!-- Service Dropdown -->
+            <select id="service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option>Hair Cut</option>
+                <option>Beard Trim</option>
+                <option>Hair Spa</option>
+                <option>Facial</option>
+                <option>Hair Coloring</option>
+                <option>Waxing</option>
+                <option>Threading</option>
+            </select>
+
+            <!-- Date Field -->
+            <input type="date" id="date" required>
+
+            <!-- Time Field -->
+            <input type="time" id="time" required>
+
+            <button type="submit" class="button">Send Booking</button>
+
+        </form>
+
+    </div>
+</div>
+<!-- ===================== END BOOKING MODAL ===================== -->
+
+<!-- ===================== MODAL SCRIPT ===================== -->
+<script>
+
+function openBookingModal() {
+    document.getElementById("bookingModal").style.display = "block";
+}
+
+function closeBookingModal() {
+    document.getElementById("bookingModal").style.display = "none";
+}
+
+function sendToWhatsApp() {
+
+    var name = document.getElementById("name").value;
+    var service = document.getElementById("service").value;
+    var date = document.getElementById("date").value;
+    var time = document.getElementById("time").value;
+
+    var timeParts = time.split(":");
+    var hours = parseInt(timeParts[0]);
+    var minutes = timeParts[1];
+    var ampm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    var formattedTime = hours + ":" + minutes + " " + ampm;
+
+    alert("Thank you " + name + "! Redirecting to WhatsApp...");
+
+    var message = "Hello Bliss // Blade,%0A%0A"
+        + "Name: " + name + "%0A"
+        + "Service: " + service + "%0A"
+        + "Preferred Date: " + date + "%0A"
+        + "Preferred Time: " + formattedTime;
+
+    var whatsappURL = "https://wa.me/919990939344?text=" + message;
+
+    window.open(whatsappURL, "_blank");
+
+    closeBookingModal();
+}
+
+</script>
+<!-- ===================== END MODAL SCRIPT ===================== -->
+
 </body>
 </html>
+
 
 

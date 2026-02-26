@@ -10,7 +10,7 @@ body {
 
 /* ===================== MOBILE NAVIGATION ===================== */
 nav {
-    background: rgba(0,0,0,0.7);
+    background: linear-gradient(90deg, #071a3a, #0B2C6B);
     backdrop-filter: blur(6px);
     padding: 15px;
     text-align: center;
@@ -22,7 +22,7 @@ nav {
 
 nav a {
     display: inline-block;
-    margin: 8px 10px;
+    margin: 8px 12px;
     font-size: 14px;
     color: #D4AF37;
     text-decoration: none;
@@ -247,6 +247,7 @@ nav a:hover {
     }
 
 }
+
 
 
 

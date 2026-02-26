@@ -222,32 +222,7 @@ nav a:hover {
 
 }
 
-/* ===================== FINAL CLEAN MOBILE HERO ===================== */
-@media (max-width: 768px) {
 
-    .hero {
-        padding: 85px 20px 60px 20px;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-        line-height: 1.2;
-        margin-bottom: 12px;
-    }
-
-    .hero p {
-        margin: 6px 0;
-        line-height: 1.4;
-    }
-
-    .hero .button {
-        width: 80%;
-        margin: 20px auto 0 auto;
-        display: block;
-    }
-
-}
 
 
 

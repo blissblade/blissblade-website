@@ -222,18 +222,7 @@ nav a:hover {
 
 }
 
-/* ===================== MOBILE HERO FIX ===================== */
-@media (max-width: 768px) {
 
-    .hero {
-        padding: 100px 20px;
-    }
-
-    .hero h1 {
-        font-size: 30px;
-    }
-
-}
 
 /* ===================== MOBILE WHATSAPP FIX ===================== */
 @media (max-width: 768px) {
@@ -268,36 +257,33 @@ nav a:hover {
 
 }
 
-/* ===================== MOBILE HERO ALIGN FIX ===================== */
+/* ===================== FINAL CLEAN MOBILE HERO ===================== */
 @media (max-width: 768px) {
 
     .hero {
-        padding: 90px 20px 70px 20px; /* better vertical balance */
-    }
-
-    .hero h1 {
-        font-size: 30px;
-        line-height: 1.2;
-        margin-bottom: 15px;
-    }
-
-    .hero p {
-        margin: 8px 0;
-        line-height: 1.4;
-    }
-
-}
-
-/* ===================== HERO BUTTON FIX ONLY ===================== */
-@media (max-width: 768px) {
-
-    .hero .button {
-        width: 85%;
-        margin: 25px auto 0 auto;
+        padding: 85px 20px 60px 20px;
         text-align: center;
     }
 
+    .hero h1 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
+    .hero p {
+        margin: 6px 0;
+        line-height: 1.4;
+    }
+
+    .hero .button {
+        width: 80%;
+        margin: 20px auto 0 auto;
+        display: block;
+    }
+
 }
+
 
 
 
